@@ -9,7 +9,7 @@ module.exports = {
             return res.status(400).json({ error: "Usuario não existe"});
         } */
         const taski = await Task.findById(req.params.id);
-        console.log(taski);
+        //console.log(taski);
         const task = await Task.findByIdAndUpdate(
             req.params.id, req.body, {new: true}
         );

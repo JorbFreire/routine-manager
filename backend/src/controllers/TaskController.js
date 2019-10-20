@@ -4,7 +4,6 @@ const Task = require('../models/Task');
 module.exports = {
     async index(req, res){
         const {user_id} = req.headers;
-        console.log(user_id);
 
         const tasks = await Task.find({user: user_id});
 
