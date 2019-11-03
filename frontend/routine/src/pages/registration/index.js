@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import '../styles.css';
 
 function handdleRegistration(){
   console.log( "I haddle it");
@@ -10,7 +10,7 @@ function Registration() {
       id="registration"
       className="page"
     >
-      <div id="main-box">
+      <div className="main-box">
         <header> <h1> Hi! </h1> </header>
         <a href="/login">
           <p> <i> 
@@ -23,7 +23,7 @@ function Registration() {
           </label>
           <input 
             id="email"
-            type="text"
+            type="email"
             placeholder="e-mail"
           />
           <label htmlFor="password">
@@ -31,7 +31,7 @@ function Registration() {
           </label>
           <input 
             id="password"
-            type="text"
+            type="password"
             placeholder="password"
           />
           <label htmlFor="password">
@@ -39,13 +39,13 @@ function Registration() {
           </label>
           <input 
             id="password"
-            type="text"
+            type="password"
             placeholder="password"
           />
           <button
             onClick={handdleRegistration}
             type="submit"
-            id="login-button"
+            id="registration-button"
           >
             Login
           </button>

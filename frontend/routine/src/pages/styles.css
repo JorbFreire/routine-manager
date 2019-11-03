@@ -1,4 +1,4 @@
-#main-box {
+.main-box {
     align-self: center;
     align-items: center;
     margin: 0 auto;
@@ -11,16 +11,16 @@
     width: 80%;
     background: #9da4c7;
 }
-#main-box > form {
+.main-box > form {
     width: 100%;
     display: flex;
     flex-direction: column;
 
 }
-#main-box > a {
+.main-box > a {
     color: #ffffff;
 }
-#main-box > form > button, input{
+.main-box > form > button, input{
     width: 100%;
     height: 42px;
     border: 0;
@@ -32,10 +32,10 @@
 
     color: #ffffff;
 }
-#main-box > form > button:hover {
+.main-box > form > button:hover {
     background: #57595a;
 }
-#main-box form > input{
+.main-box form > input{
     height: 34px;
     font-size: 15px;    
     padding: 12px;

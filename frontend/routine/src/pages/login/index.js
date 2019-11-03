@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import '../styles.css';
 
 function handdleLogin(){
   console.log( "I haddle it");
@@ -10,7 +10,7 @@ function Login() {
       id="login"
       className="page"
     >
-      <div id="main-box">
+      <div className="main-box">
         <header> <h1> Hi! </h1> </header>
         <a href="/registration">
           <p> <i>Create new acount </i></p>
@@ -19,13 +19,13 @@ function Login() {
           <label htmlFor="email"></label>
           <input 
             id="email"
-            type="text"
+            type="email"
             placeholder="e-mail"
           />
           <label htmlFor="password"></label>
           <input 
             id="password"
-            type="text"
+            type="password"
             placeholder="password"
           />
           <button

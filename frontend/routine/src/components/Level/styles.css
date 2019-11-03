@@ -1,0 +1,17 @@
+#level{
+    height: 32px;
+    width: 100%;
+}
+#level > input{
+    padding: 0 30px;
+    width: 80%;
+    height: 100%;
+}
+#remover{
+    flex-direction: inherit;
+    width: 20%;
+    height: 100%;
+    color: red;
+    align-content: center;
+    align-self: center;
+}
