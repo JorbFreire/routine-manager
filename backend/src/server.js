@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const routes = require('./routes');
 const app = express();
-const door = 80;
+const door = 3000;
 
 mongoose.connect('mongodb+srv://routine_reader:pgNxPmmEH7dxrEY@routine-4di1x.mongodb.net/test?retryWrites=true&w=majority',{
     // senh: pgNxPmmEH7dxrEY
