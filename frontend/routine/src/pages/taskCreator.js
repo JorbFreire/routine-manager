@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
-import {Level} from '../../components/Level/index';
-import '../styles.css';
+import React from 'react';
+import {Level} from '../components/Level/index';
+import handleTaskInputs from '../handlers/handleTaskInputs';
 
+import './styles.css';
 
-function TaskNew() {
+function taskCreator() {
   return (
     <div 
       className="page"
@@ -55,4 +56,4 @@ function TaskNew() {
   );
 }
 
-export default TaskNew;
+export default taskCreator;

@@ -1,9 +1,8 @@
 import React from 'react';
-import '../styles.css';
+import { Link } from 'react-router-dom'
+import handleLogin from '../handlers/handleLogin';
+import './styles.css';
 
-function handdleLogin(){
-  console.log( "I haddle it");
-}
 function Login() {
   return (
     <div 
@@ -12,9 +11,9 @@ function Login() {
     >
       <div className="main-box">
         <header> <h1> Hi! </h1> </header>
-        <a href="/registration">
+        <Link to="/registration">
           <p> <i>Create new acount </i></p>
-        </a>
+        </Link>
         <form>
           <label htmlFor="email"></label>
           <input 
@@ -29,7 +28,7 @@ function Login() {
             placeholder="password"
           />
           <button
-            onClick={handdleLogin}
+            onClick={handleLogin}
             type="submit"
             id="login-button"
           >

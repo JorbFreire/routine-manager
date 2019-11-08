@@ -1,9 +1,8 @@
 import React from 'react';
-import '../styles.css';
+import { Link } from 'react-router-dom'
+import handleRegistration from '../handlers/handleRegistration';
+import './styles.css';
 
-function handdleRegistration(){
-  console.log( "I haddle it");
-}
 function Registration() {
   return (
     <div 
@@ -12,11 +11,11 @@ function Registration() {
     >
       <div className="main-box">
         <header> <h1> Hi! </h1> </header>
-        <a href="/login">
+        <Link to="/login">
           <p> <i> 
             Alredy have an acount? Click to login! 
           </i></p>
-        </a>
+        </Link>
         <form>
           <label htmlFor="email">
             E-mail *
@@ -43,7 +42,7 @@ function Registration() {
             placeholder="password"
           />
           <button
-            onClick={handdleRegistration}
+            onClick={handleRegistration}
             type="submit"
             id="registration-button"
           >
